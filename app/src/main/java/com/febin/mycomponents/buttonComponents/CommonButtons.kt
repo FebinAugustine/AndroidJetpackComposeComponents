@@ -1,4 +1,4 @@
-package com.febin.mycomponents
+package com.febin.mycomponents.buttonComponents
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun ButtonComponents(
+fun CommonButtons(
     onClick: () -> Unit,
     modifier: Modifier,
 ) {
@@ -116,8 +116,8 @@ fun ButtonComponents(
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun ButtonComponentsPreview() {
-    ButtonComponents(
+fun CommonButtonsPreview() {
+    CommonButtons(
         onClick = { /*TODO*/ },
         modifier = Modifier,
     )

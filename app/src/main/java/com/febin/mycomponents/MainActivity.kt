@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.febin.mycomponents.menuComponents.ExposedDropdownMenuBoxComp
+import com.febin.mycomponents.menuComponents.ExposedDropdownMenuBoxCompEditable
 import com.febin.mycomponents.ui.theme.MyComponentsTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,12 +21,16 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                 ) { values ->
-                    ButtonComponents(
-                        onClick = { /*TODO*/ },
+//                    CommonButtons(
+//                        onClick = { /*TODO*/ },
+//                        modifier = Modifier
+//                            .padding(values),
+//
+//                        )
+                    ExposedDropdownMenuBoxCompEditable(
                         modifier = Modifier
-                            .padding(values),
-
-                        )
+                            .padding(values)
+                    )
                 }
 
 

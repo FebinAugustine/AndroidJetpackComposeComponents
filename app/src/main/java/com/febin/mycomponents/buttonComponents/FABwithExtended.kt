@@ -1,4 +1,4 @@
-package com.febin.mycomponents
+package com.febin.mycomponents.buttonComponents
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -13,6 +13,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.ExtendedFloatingActionButton
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LargeFloatingActionButton
 import androidx.compose.material3.MaterialTheme
@@ -26,7 +27,7 @@ import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun FloatingActionButtonComponents(
+fun FABwithExtended(
     onClick: () -> Unit,
     modifier: Modifier,
 ) {
@@ -45,6 +46,19 @@ fun FloatingActionButtonComponents(
                         .fillMaxWidth()
                         .height(10.dp)
                 )
+                // Normal Floating Action Button Component
+
+                FloatingActionButton(
+                    onClick = { onClick() },
+                ) {
+                    Icon(Icons.Filled.Add, "Floating action button.")
+                }
+
+                Spacer(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(20.dp)
+                )
                 // Small Floating Action Button Component
                 SmallFloatingActionButton(
                     onClick = { onClick() },
@@ -57,7 +71,7 @@ fun FloatingActionButtonComponents(
                 Spacer(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(10.dp)
+                        .height(20.dp)
                 )
 
                 // Large Floating Action Button Component
@@ -71,13 +85,13 @@ fun FloatingActionButtonComponents(
                 Spacer(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(10.dp)
+                        .height(20.dp)
                 )
 
-                // Extended Floating Action Button Component
+                // Extended Floating Action Button 2
                 ExtendedFloatingActionButton(
                     onClick = { onClick() },
-                    icon = { Icon(Icons.Filled.Edit, "Extended floating action button.") },
+                    icon = { Icon(Icons.Filled.Edit, "Extended floating action button 2.") },
                     text = { Text(text = "Extended FAB") },
                 )
 
@@ -92,8 +106,8 @@ fun FloatingActionButtonComponents(
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun FloatingActionButtonComponentsPreview() {
-    FloatingActionButtonComponents(
+fun FABwithExtendedPreview() {
+    FABwithExtended(
         onClick = { /*TODO*/ },
         modifier = Modifier,
     )

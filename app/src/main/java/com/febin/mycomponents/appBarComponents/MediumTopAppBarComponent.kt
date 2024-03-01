@@ -1,4 +1,4 @@
-package com.febin.mycomponents
+package com.febin.mycomponents.appBarComponents
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

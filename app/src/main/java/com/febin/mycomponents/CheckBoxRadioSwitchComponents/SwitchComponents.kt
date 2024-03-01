@@ -1,4 +1,4 @@
-package com.febin.mycomponents
+package com.febin.mycomponents.CheckBoxRadioSwitchComponents
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
