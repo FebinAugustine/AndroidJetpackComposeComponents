@@ -8,8 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.febin.mycomponents.menuComponents.ExposedDropdownMenuBoxComp
-import com.febin.mycomponents.menuComponents.ExposedDropdownMenuBoxCompEditable
+import com.febin.mycomponents.datePickerComponents.RangeDatePicker
 import com.febin.mycomponents.ui.theme.MyComponentsTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,15 +20,10 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                 ) { values ->
-//                    CommonButtons(
-//                        onClick = { /*TODO*/ },
-//                        modifier = Modifier
-//                            .padding(values),
-//
-//                        )
-                    ExposedDropdownMenuBoxCompEditable(
+
+                    RangeDatePicker(
                         modifier = Modifier
-                            .padding(values)
+                            .padding(values),
                     )
                 }
 
