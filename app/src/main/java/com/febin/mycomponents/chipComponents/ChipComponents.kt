@@ -1,4 +1,4 @@
-package com.febin.mycomponents
+package com.febin.mycomponents.chipComponents
 
 import android.util.Log
 import androidx.compose.foundation.background
