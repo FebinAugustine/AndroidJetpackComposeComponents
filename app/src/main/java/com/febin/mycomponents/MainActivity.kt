@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.febin.mycomponents.sliderComponents.RangeSliderComp
+import com.febin.mycomponents.advancedComponents.tabWithPager.TabWithPagerComp
 import com.febin.mycomponents.ui.theme.MyComponentsTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                 ) { values ->
 
-                    RangeSliderComp(
+                    TabWithPagerComp(
                         modifier = Modifier
                             .padding(values),
 
